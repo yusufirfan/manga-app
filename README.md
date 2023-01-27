@@ -3,5 +3,5 @@
 
 Todo: 
 - Slider
-- Log In and Sign Up Page
+- Sign Up Page
 - and others.
