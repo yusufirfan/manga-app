@@ -647,12 +647,7 @@
   align-items: center;
 }
 .cont__login .content .form__alt__remember input {
-  width: 1.3rem;
-  height: 1.3rem;
   margin-right: 7px;
-}
-.cont__login .content .form__alt__remember label {
-  height: 1.3rem;
 }
 .cont__login .content .form__alt__recovery a {
   font-size: 1rem;
@@ -673,6 +668,9 @@
 }
 .cont__login .content .form__buttons .btn:first-child {
   margin-bottom: 0.6rem;
+}
+.cont__login .content .form__buttons .btn i {
+  margin-right: 7px;
 }
 .cont__login .content .form__others a {
   font-size: 1rem;
@@ -741,6 +739,14 @@
   .cont__login .content .form {
     height: 70%;
   }
+  .cont__login .content .form__alt__remember input {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .cont__login .content .form__alt__remember label {
+    font-size: 1rem;
+    height: 1.3rem;
+  }
   .cont__login .img {
     width: 50%;
   }
@@ -749,6 +755,214 @@
 @media only screen and (min-width: 1200px) {
   .cont__login .content .form {
     height: 65%;
+  }
+}
+.cont__signup {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.cont__signup .content {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.cont__signup .content .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.cont__signup .content .form__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cont__signup .content .form__title h1, .cont__signup .content .form__title i {
+  font-size: 2rem;
+  margin-right: 7px;
+  color: #1B6FA8;
+}
+.cont__signup .content .form__desc h1, .cont__signup .content .form__desc p {
+  color: #1F1F1F;
+  margin-bottom: 0.6rem;
+}
+.cont__signup .content .form__desc p {
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+.cont__signup .content .form__desc span {
+  color: #1B6FA8;
+}
+.cont__signup .content .form__area {
+  width: 100%;
+}
+.cont__signup .content .form__area .input__box {
+  width: 100%;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 0.6rem;
+}
+.cont__signup .content .form__area .input__box:last-child {
+  margin-bottom: 0;
+}
+.cont__signup .content .form__area .input__box i {
+  width: 10%;
+  text-align: center;
+}
+.cont__signup .content .form__area .input__box .input {
+  position: relative;
+  width: 90%;
+}
+.cont__signup .content .form__area .input__box .input input {
+  height: 3rem;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #1F1F1F;
+}
+.cont__signup .content .form__area .input__box .input span {
+  position: absolute;
+  left: 0;
+  color: #1F1F1F;
+  pointer-events: none;
+  transition: 0.5s;
+  text-align: left;
+  padding: 0.85rem 0 0;
+}
+.cont__signup .content .form__area .input__box .input input:valid ~ span, .cont__signup .content .form__area .input__box .input input:focus ~ span {
+  color: #1B6FA8;
+  transform: translateY(-10px);
+  font-size: 0.8rem;
+  background-color: white;
+  padding: 0.2rem;
+}
+.cont__signup .content .form__alt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cont__signup .content .form__alt__remember {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont__signup .content .form__alt__remember input {
+  margin-right: 7px;
+}
+.cont__signup .content .form__buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont__signup .content .form__buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 1rem;
+}
+.cont__signup .content .form__buttons .btn:first-child {
+  margin-bottom: 0.6rem;
+}
+.cont__signup .content .form__buttons .btn i {
+  margin-right: 7px;
+}
+.cont__signup .content .form__others a {
+  font-size: 1rem;
+  color: #1B6FA8;
+  text-decoration: none;
+}
+.cont__signup .img {
+  height: 100%;
+}
+.cont__signup .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cont__signup .content {
+    width: 100%;
+  }
+  .cont__signup .content .form {
+    height: 90%;
+  }
+  .cont__signup .img {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .cont__signup .content {
+    width: 100%;
+  }
+  .cont__signup .content .form {
+    height: 90%;
+  }
+  .cont__signup .img {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cont__signup .content {
+    width: 60%;
+  }
+  .cont__signup .content .form {
+    height: 80%;
+  }
+  .cont__signup .content .form__alt__remember input {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .cont__signup .content .form__alt__remember label {
+    height: 1.3rem;
+  }
+  .cont__signup .img {
+    width: 40%;
+    display: block;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .cont__signup .content {
+    width: 50%;
+  }
+  .cont__signup .content .form {
+    height: 70%;
+  }
+  .cont__signup .content .form__alt__remember input {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .cont__signup .content .form__alt__remember label {
+    height: 1.3rem;
+  }
+  .cont__signup .img {
+    width: 50%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .cont__signup .content .form {
+    height: 75%;
   }
 }
 body {

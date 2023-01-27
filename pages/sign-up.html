@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manga - Comic Page / Log In Page</title>
+    <title>Manga - Comic Page / Sign Up Page</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <div class="cont__login">
+    <div class="cont__signup">
         <div class="content">
             <div class="form">
                 <div class="form__title">
@@ -24,6 +24,13 @@
                     <div class="input__box">
                         <div class="input">
                             <input type="text" required>
+                            <span>Name</span>
+                        </div>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input__box">
+                        <div class="input">
+                            <input type="text" required>
                             <span>Email</span>
                         </div>
                         <i class="fa-solid fa-envelope"></i>
@@ -35,22 +42,26 @@
                         </div>
                         <i class="fa-solid fa-lock"></i>
                     </div>
+                    <div class="input__box">
+                        <div class="input">
+                            <input type="password" required>
+                            <span>Confirm password</span>
+                        </div>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
                 </div>
                 <div class="form__alt">
                     <div class="form__alt__remember">
                         <input type="checkbox" name="" id="remember-check">
-                        <label for="remember-check">Remember Me</label>
-                    </div>
-                    <div class="form__alt__recovery">
-                        <a href="#">Recovery Password</a>
+                        <label for="remember-check">Send notification to my email</label>
                     </div>
                 </div>
                 <div class="form__buttons">
-                    <a href="/pages/login.html" class="btn btn__blue">Log In</a>
-                    <a href="/pages/login.html" class="btn btn__gray"><i class="fa-brands fa-google"></i> Log in with Google</a></a>
+                    <a href="../pages/sign-up.html" class="btn btn__blue">Sign Up</a>
+                    <a href="../pages/sign-up.html" class="btn btn__gray"><i class="fa-brands fa-google"></i> Sign in with Google</a></a>
                 </div>
                 <div class="form__others">
-                    <p>Don't have an account? <a href="../pages/sign-up.html">Sign up</a></p>
+                    <p>Already have an account? <a href="../pages/log-in.html">Log In</a></p>
                     <p>Go back to <a href="../index.html">home page</a></p>
                 </div>
             </div>
