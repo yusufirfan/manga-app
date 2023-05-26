@@ -69,13 +69,17 @@
 .header__left {
   width: 60%;
   height: 50%;
-  display: flex;
-  align-items: center;
 }
-.header__left h1, .header__left i {
+.header__left h1,
+.header__left i {
   font-size: 2rem;
   margin-right: 7px;
   color: #1B6FA8;
+}
+.header__left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 .header__right {
   height: 40%;
