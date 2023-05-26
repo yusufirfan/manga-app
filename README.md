@@ -2,6 +2,6 @@
 + https://yusufirfan.github.io/manga-app/
 
 Todo: 
-- Slider
+- Comic Info Page
 - Sign Up Page
 - and others.
